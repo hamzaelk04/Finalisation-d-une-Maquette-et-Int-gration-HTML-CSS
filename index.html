@@ -1,211 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+
+    <!-- header -->
     <header>
         <div class="logo">
-            <div>TeamUp</div>
-            <div>.gg</div>
+            <h2>TeamUp<span>.gg</span></h2>
         </div>
 
-        <nav>
-        <ul class="nav-links">
-        <li>
-            <a href="">Acceuil</a>
-        </li>
-        <li>
-            <a href="">Comment ça marche</a>
-        </li>
-        <li>
-            <a href="">Joueurs</a>
-        </li>
-        <li>
-            <a href="">Communauté</a>
-        </li>
-        </ul>
-        </nav>
-    
-        <button>Connexion</button>
+        <div class="menu">
+            <nav>
+                <ul class="nav-links">
+                <li>
+                    <a href="">Acceuil</a>
+                </li>
+                <li>
+                    <a href="">Comment ça marche</a>
+                </li>
+                <li>
+                    <a href="">Joueurs</a>
+                </li>
+                <li>
+                    <a href="">Communauté</a>
+                </li>
+                    <button class="button">Connexion</button>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section>
-            <div>
-                <div>
-                <h1>Trouve ton équipe.</h1>
-                <h1>Domine le jeu.</h1>
+        <section class="section-home">
+            <div class="findyourteam">
+                <div class="bigtitle">
+                <h1 class="title">Trouve ton équipe. <br> Domine le jeu.</h1>
                 </div>
-                <p>
+                <p class="title-content">
                     Rejoins la plus grande communauté E-sport et connecte-toi avec des joueurs de ton
+                    
+                </p>
+                <p class="title-content">
                     niveau sur Valorant, LoL, CS2 et plus encore.
-                </p>
-                <button>Commencer maintenant</button>
-                <button>En savoir plus</button>
+                </p >
+                <div class="findyourteam-button">
+                    <button class="button button-content">Commencer maintenant</button>
+                    <button class="button empty-button button-content">En savoir plus</button>
+                </div>
             </div>
         </section>
 
-        <section>
-            <h2>Recherche ton équipe idéale</h2>
-            <div>
-                <label for="jeu">Jeu</label>
-                <select name="jeu" id="">
-                    <option value="">Sélectionne un jeu</option>
-                    <option value="valorant">Valorant</option>
-                    <option value="league of legends">League of legends</option>
-                    <option value="counter-strike 2">Counter-Strike 2</option>
-                    <option value="overwatch2">Overwatch2</option>
-                </select>
+        <section class="section-search">
+            <div class="div-search">
+                <h2 id="h2-search">Recherche ton équipe idéale</h2>
+                <div class="div-filter">
+                    <div class="div-filter-label">
+                        <label for="jeu">Jeu</label>
+                        <select name="jeu" id="">
+                            <option value="">Sélectionne un jeu</option>
+                            <option value="valorant">Valorant</option>
+                            <option value="league of legends">League of legends</option>
+                            <option value="counter-strike 2">Counter-Strike 2</option>
+                            <option value="overwatch2">Overwatch2</option>
+                        </select>
+                    </div>
+                    <div class="div-filter-label">
+                        <label for="jeu">Niveau</label>
+                        <select name="jeu" id="">
+                            <option value="">Tous les niveaux</option>
+                            <option value="valorant">Valorant</option>
+                            <option value="league of legends">League of legends</option>
+                            <option value="counter-strike 2">Counter-Strike 2</option>
+                            <option value="overwatch2">Overwatch2</option>
+                        </select>
+                    </div>
+                    <div class="div-filter-label">
+                        <label for="jeu">Rôle</label>
+                        <select name="jeu" id="">
+                            <option value="">Tous les rôles</option>
+                            <option value="valorant">Valorant</option>
+                            <option value="league of legends">League of legends</option>
+                            <option value="counter-strike 2">Counter-Strike 2</option>
+                            <option value="overwatch2">Overwatch2</option>
+                        </select>
+                    </div>
+                    <button class="button button-search">Rechercher</button>
+                </div>
             </div>
-            <div>
-                <label for="jeu">Niveau</label>
-                <select name="jeu" id="">
-                    <option value="">Tous les niveaux</option>
-                    <option value="valorant">Valorant</option>
-                    <option value="league of legends">League of legends</option>
-                    <option value="counter-strike 2">Counter-Strike 2</option>
-                    <option value="overwatch2">Overwatch2</option>
-                </select>
-            </div>
-            <div>
-                <label for="jeu">Rôle</label>
-                <select name="jeu" id="">
-                    <option value="">Tous les rôles</option>
-                    <option value="valorant">Valorant</option>
-                    <option value="league of legends">League of legends</option>
-                    <option value="counter-strike 2">Counter-Strike 2</option>
-                    <option value="overwatch2">Overwatch2</option>
-                </select>
-            </div>
-
-            <button>Rechercher</button>
         </section>
 
-        <section>
+        <section class="section-info">
             <h2>Comment ça marche ?</h2>
+            <div class="div-line"></div>
 
-            <div>
-                <div><img src="" alt=""></div>
-                <h3>Trouve une équipe</h3>
-                <p>
-                    Parcours des centaines de profils de
-                    joueurs et d'équipes qui cherchent des
-                    coéquipiers de ton niveau.
-                </p>
-            </div>
-            <div>
-                <div><img src="" alt=""></div>
-                <h3>Publie ton profil</h3>
-                <p>
-                    Crée ton profil de joueur avec tes stats,
-                    tes jeux favoris et ton niveau pour être
-                    visible par les équipes.
-                </p>
-            </div>
-            <div>
-                <div><img src="" alt=""></div>
-                <h3>Rejoins la communauté</h3>
-                <p>
-                    Connecte-toi avec des milliers de
-                    joueurs passionnés et participe à des
-                    tournois communautaires.
-                </p>
+            <div class="div-info">
+                <div class="div-info-profile">
+                    <div class="div-icon"><i class="icon fa-solid fa-user-group"></i></div>
+                    <h3>Trouve une équipe</h3>
+                    <p class="p-info">
+                        Parcours des centaines de profils de
+                        joueurs et d'équipes qui cherchent des
+                        coéquipiers de ton niveau.
+                    </p>
+                </div>
+                <div class="div-info-profile">
+                    <div class="div-icon"><i class="icon fa-solid fa-user-plus"></i></div>
+                    <h3>Publie ton profil</h3>
+                    <p class="p-info">
+                        Crée ton profil de joueur avec tes stats,
+                        tes jeux favoris et ton niveau pour être
+                        visible par les équipes.
+                    </p>
+                </div>
+                <div class="div-info-profile">
+                    <div class="div-icon"><i class="icon fa-solid fa-users"></i></div>
+                    <h3>Rejoins la communauté</h3>
+                    <p class="p-info">
+                        Connecte-toi avec des milliers de
+                        joueurs passionnés et participe à des
+                        tournois communautaires.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <section>
+        <section class="section-players">
             <h2>Joueurs disponibles</h2>
-            <div>
-                <div>
-                    <div></div>
-                    <div><img src="" alt=""></div>
+            <div class="div-line"></div>
+            <div class="div-player">
+                <div class="div-cardplayer">
+                    <div class="div-profileplayer">
+                        <div class="div-onlinebutton"></div>
+                        <div class="div-profilecadre"></div>
+                    </div>
+                    <h3 class="playername">xFawzer</h3>
+                    <span class="gamename">Valorant</span>
+                    <div class="rankntype">
+                        <p class="inforank">Controller</p>
+                        <p class="inforank">Diamant II</p>
+                    </div>
+                    <p class="p-player">
+                        Main Clove/Omen, cherche équipe compétitive
+                        pour ranked push 
+                    </p>
+                    <button class="button buttonprofile">Voir le profil</button>
                 </div>
-                <h3>xFawzer</h3>
-                <span>Valorant</span>
-                <p>Controller</p>
-                <p>Diamant II</p>
-                <p>
-                    Main Clove/Omen, cherche équipe compétitive
-                    pour ranked push 
-                </p>
-                <button>Voir le profil</button>
-            </div>
-            <div>
-                <div>
-                    <div></div>
-                    <div><img src="" alt=""></div>
+                <div class="div-cardplayer">
+                    <div class="div-profileplayer">
+                        <div class="div-onlinebutton"></div>
+                        <div class="div-profilecadre"></div>
+                    </div>
+                    <h3 class="playername">PhoenixRising</h3>
+                    <span class="gamename">League of Legends</span>
+                    <div class="rankntype">
+                        <p class="inforank">Mid Lane</p>
+                        <p class="inforank">Master</p>
+                    </div>
+                    <p class="p-player">
+                        Joueur mid expérimenté, disponible pour scrims
+                        et tournois
+                    </p>
+                    <button class="button buttonprofile">Voir le profil</button>
                 </div>
-                <h3>PhoenixRising</h3>
-                <span>League of Legends</span>
-                <p>Mid Lane</p>
-                <p>Master</p>
-                <p>
-                    Joueur mid expérimenté, disponible pour scrims
-                    et tournois
-                </p>
-                <button>Voir le profil</button>
-            </div>
-            <div>
-                <div>
-                    <div></div>
-                    <div><img src="" alt=""></div>
+                <div class="div-cardplayer">
+                    <div class="div-profileplayer">
+                        <div class="div-onlinebutton"></div>
+                        <div class="div-profilecadre"></div>
+                    </div>
+                    <h3 class="playername">IceQueen</h3>
+                    <span class="gamename">Cs2</span>
+                    <div class="rankntype">
+                        <p class="inforank">AWPer</p>
+                        <p class="inforank">Global</p>
+                    </div>
+                    <p class="p-player">
+                        AWP main, 3000h de jeu, cherche équipe
+                        sérieuse
+                    </p>
+                    <button class="button buttonprofile">Voir le profil</button>
                 </div>
-                <h3>IceQueen</h3>
-                <span>Cs2</span>
-                <p>AWPer</p>
-                <p>Global</p>
-                <p>
-                    AWP main, 3000h de jeu, cherche équipe
-                    sérieuse
-                </p>
-                <button>Voir le profil</button>
-            </div>
-            <div>
-                <div>
-                    <div></div>
-                    <div><img src="" alt=""></div>
+                <div class="div-cardplayer">
+                    <div class="div-profileplayer">
+                        <div class="div-onlinebutton"></div>
+                        <div class="div-profilecadre"></div>
+                    </div>
+                    <h3 class="playername">NeonBlade</h3>
+                    <span class="gamename">Valorant</span>
+                    <div class="rankntype">
+                        <p class="inforank">Controller</p>
+                        <p class="inforank">Platine III</p>
+                    </div>
+                    <p class="p-player">
+                        Main Omen/Viper, bon game sense et
+                        communication
+                    </p>
+                    <button class="button buttonprofile">Voir le profil</button>
                 </div>
-                <h3>NeonBlade</h3>
-                <span>Valorant</span>
-                <p>Controller</p>
-                <p>Platine III</p>
-                <p>
-                    Main Omen/Viper, bon game sense et
-                    communication
-                </p>
-                <button>Voir le profil</button>
-            </div>
-            <div>
-                <div>
-                    <div></div>
-                    <div><img src="" alt=""></div>
+                <div class="div-cardplayer">
+                        <div class="div-profileplayer">
+                            <div class="div-onlinebutton"></div>
+                            <div class="div-profilecadre"></div>
+                        </div>
+                    <h3 class="playername">ThunderGod</h3>
+                    <span class="gamename">League of Legends</span>
+                    <div class="rankntype">
+                            <p class="inforank">Jungle</p>
+                            <p class="inforank">Diamant I</p>
+                    </div>
+                    <p class="p-player">
+                        Jungle main, macro game fort, dispo tous les
+                        soirs 
+                    </p>
+                    <button class="button buttonprofile">Voir le profil</button>
                 </div>
-                <h3>ThunderGod</h3>
-                <span>League of Legends</span>
-                <p>Jungle</p>
-                <p>Diamant I</p>
-                <p>
-                    Jungle main, macro game fort, dispo tous les
-                    soirs 
-                </p>
-                <button>Voir le profil</button>
-            </div>
-            <div>
-                <div>
-                    <div></div>
-                    <div><img src="" alt=""></div>
+                <div class="div-cardplayer">
+                        <div class="div-profileplayer">
+                            <div class="div-onlinebutton"></div>
+                            <div class="div-profilecadre"></div>
+                        </div>
+                    <h3 class="playername">CyberNinja</h3>
+                    <span class="gamename">cs2</span>
+                    <div class="rankntype">
+                            <p class="inforank">Entry Fragger</p>
+                            <p class="inforank">Supreme</p>
+                    </div>
+                    <p class="p-player">
+                        Agressif, bon aim, cherche équipe pour FACEIT
+                    </p>
+                    <button class="button buttonprofile">Voir le profil</button>
                 </div>
-                <h3>CyberNinja</h3>
-                <span>cs2</span>
-                <p>Entry Fragger</p>
-                <p>Supreme</p>
-                <p>
-                    Agressif, bon aim, cherche équipe pour FACEIT
-                </p>
-                <button>Voir le profil</button>
             </div>
         </section>
 
@@ -260,8 +292,7 @@
         <section>
             <div>
                 <div class="logo">
-                    <div>TeamUp</div>
-                    <div>.gg</div>
+                    <h2>TeamUp <span>.gg</span></h2>
                 </div>
                 <p>La plateforme E-sport qui connecte les joueurs 
                     et les equipes du monde entier.</p>

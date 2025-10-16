@@ -1,0 +1,408 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --background-color: #0A0E27;
+    --button-color: linear-gradient(110.78deg, #00FFFF 0%, #0099FF 100%);
+    --gradient-background: radial-gradient(circle at top left, rgba(0,255,255,0.2), transparent 60%),
+              radial-gradient(circle at bottom right, rgba(255, 99, 255, 0.119), transparent 60%),
+              linear-gradient(135deg, #04172a, #220a33);
+    --div-background: linear-gradient(135deg, #121730 0%, #10142A 70%);
+}
+
+body {
+    background-color: #0A0E27;
+}
+
+/* Header */
+
+.logo {
+    margin-top: 7px;
+    color: white;
+    font-weight: 700 bold;
+    font-size: 27,5px;
+    width: 151px;
+    height: 46px;
+    max-height: 46.08px;
+    letter-spacing: -0.5px;
+    vertical-align: middle;
+}
+
+.logo span {
+    color: #00FFFF;
+;
+}
+
+header {
+    z-index: 1;
+    position: fixed;
+    margin-top: -83px;
+    width: 100%;
+    height: 83px;
+    display: flex;
+    background-color: var(--background-color);
+    padding: 16px 40px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    margin-right: 32px;
+    justify-content: right;
+    width: 100%;
+    list-style: none;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-links a {
+    text-decoration: none !important;
+    color:#E0E0E0;
+}
+
+.menu {
+    width: 100%;
+}
+
+.button {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    background: var(--button-color);
+    box-shadow: 0px 4px 15px 0px #00FFFF4D;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* accueil */
+
+.section-home {
+    display: flex;
+    width: 100%;
+    margin-top: 83px;
+    height: 638.08px;
+    min-height: 637px;
+    opacity: 1px;
+    background: var(--gradient-background);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.findyourteam {
+    position: relative;
+
+    text-align: center;
+    margin-top: -24px;
+}
+
+p {
+    color: #B0B0B0;
+
+}
+
+.title-content{
+    margin-bottom: 24px;
+    font-size: 20px;
+}
+
+.bigtitle {
+    background: none;
+}
+
+h1 {
+    background: linear-gradient(99.98deg,#FFFFFF 0%, #00FFFF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    text-shadow: 0px 0px 40px #00ffff93;
+    margin: 24px;
+    font-size: 70px;
+}
+
+.empty-button {
+    background: none;
+    color: #00FFFF;
+    box-shadow: none;
+    border: solid;
+}
+
+.findyourteam-button {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.button-content {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Recherche */
+
+.section-search {
+    display: flex;
+    justify-content: center;
+}
+
+.div-search {
+    position: absolute;
+
+    top: 715px;
+
+    width: 90%;
+    height: 238px;
+
+    border: solid;
+    border-width: 1px;
+    border-radius: 16px;
+    border-color: #00ffff33;
+
+    background: var(--div-background);
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 32px;
+    padding: 40px 41px;
+}
+
+.div-filter {
+    display: flex;
+    gap: 24px;
+}
+
+.div-filter-label {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    color: #FFFFFF;
+    font-size: 39.2px;
+    font-weight: bold;
+    line-height: 44.8px;
+}
+
+#h2-search{
+    font-size: 27.3px;
+}
+
+label {
+    color: #00FFFF;
+    font-size: 13.8px;
+    font-weight: bold;
+}
+
+select{
+    width: 251px;
+    height: 49px;
+    border: solid 1px;
+    border-radius: 8px;
+    border-color: #00FFFF4D;
+    padding: 15px 31px 15px 19px;
+    background: #0A0E27CC;
+    color: #E0E0E0;
+}
+
+.button-search {
+    width: 252.45px;
+    height: 48px;
+    margin-top: 16px;
+}
+
+/* Comment ça marche */
+
+.section-info {
+    margin-top: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-line {
+    margin-top: 16px;
+    width: 100px;
+    height: 4px;
+
+    border: none;
+    border-radius: 2px;
+
+    background: linear-gradient(90deg, #00FFFF 0%, #FF00FF 100%);
+}
+
+.div-info {
+    display: flex;
+    margin-top: 48px;
+    gap: 64px;
+}
+
+.div-info-profile {
+    background: var(--div-background);
+
+    width: 365.33px;
+    height: 326.78px;
+
+    border: solid;
+    border-width: 1px;
+    border-radius: 16px;
+    border-color: #00ffff33;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.div-icon{
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 40px;
+    background: var(--gradient-background);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    font-size: 30px;
+    color: #00FFFF;
+}
+
+h3 {
+    font-size: 23.4px;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 38.4px;
+}
+
+.p-info{ 
+    font-size: 14.9px;
+    text-align: center;
+    width: 276px;
+    gap: 20px;
+    line-height: 28.8px;
+    font-weight: 400;
+}
+
+/* Joueurs disponibles */
+
+.section-players{
+    margin-top: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-player{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+
+    padding: 0 34px;
+}
+
+.div-cardplayer{
+    flex: 1 1 30.33%;
+    background: var(--div-background);
+    width: 205.33px;
+    height: 384.89px;
+
+    border: solid;
+    border-width: 1px;
+    border-radius: 16px;
+    border-color: #00ffff33;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+}
+
+.div-profileplayer{
+    display: flex;
+    position: relative;
+}
+
+.div-profilecadre {
+    width: 80px;
+    height: 80px;
+
+    border-radius: 40px;
+    border: solid 3px #00FFFF;
+    box-shadow: 0px 0px 20px 0px #00FFFF66;
+}
+
+.div-onlinebutton {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    border: solid 3px #0A0E27;
+    background: #0f0;
+
+    left: 65px;
+}
+
+.playername{
+    font-size: 18.9px;
+}
+
+.gamename{
+    border: solid 1px #FF465566;
+    border-radius: 20px;
+
+    padding: 5px 13px;
+
+    background-color: #FF465533;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    color: #ff4655;
+}
+
+.rankntype {
+    display: flex;
+    gap: 16px;
+}
+
+.inforank {
+    color: #00FFFF;
+    font-size: 13.8px;
+    font-weight: bold;
+}
+
+.p-player {
+    text-align: center;
+    font-size: 13.5px;
+    font-weight: 400;
+    width: 300px;
+    line-height: 23px;
+}
+
+.buttonprofile{
+    width: 315.33px;
+    height: 44px;
+    font-size: 15.6px;
+    font-weight: bold 700;
+    padding: 12px 24px;
+}
