@@ -341,6 +341,7 @@ h3 {
     padding: 10px 24px;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .div-profilecadre {
@@ -360,7 +361,7 @@ h3 {
     border: solid 3px #0A0E27;
     background: #0f0;
 
-    left: 65px;
+    left: 85px;
 }
 
 .playername{
