@@ -338,8 +338,9 @@ h3 {
 }
 
 .div-profileplayer{
+    padding: 10px 24px;
     display: flex;
-    position: relative;
+    flex-direction: column;
 }
 
 .div-profilecadre {
@@ -471,6 +472,7 @@ h3 {
 }
 
 .section-comments {
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -601,4 +603,90 @@ h4 {
 
     display: flex;
     justify-content: center;
+}
+
+/* Second page */
+
+.newannonce{
+    margin-top: 83px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.publish{
+    width: 898px;
+    border: none;
+    border-radius: 16px;
+    padding-top: 44px;
+    padding-bottom: 44px;
+
+    background: linear-gradient(#1A1F3A, #1A1F3A);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 32px;
+}
+
+.annoncecontent{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.input-content {
+    width: 350px;
+    padding: 15px 19px;
+
+    border-radius: 8px;
+
+    background-color: #0A0E27;
+    color: #E0E0E0;
+
+    border: 0.1px solid #00FFFF4D;
+}
+
+.div-content{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.select-annonce {
+    width: 350px;
+}
+
+.game {
+    color: #00FFFF;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+
+.column-two {
+    width: 550px;
+    padding: 0px 20px;
+}
+
+.p-annonce{
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+#list-number{
+    color: rgb(146, 146, 146);
+    text-decoration: none;
+}
+
+table{
+    border: none;
+}
+
+td, th {
+    border-color: #00FFFF;
 }
